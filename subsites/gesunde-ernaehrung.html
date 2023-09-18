@@ -1,36 +1,62 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ernährungs-Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    
+
 </head>
+
 <body class="bg-gray-100">
 
-<nav class="fixed top-0 left-0 w-full p-5 bg-green-500">
-    <div class="flex justify-around">
-        <a href="/" class="text-2xl font-bold text-white">Ernährung & Gesundheit</a>
-        <ul class="flex justify-center ml-10 space-x-6">
-            <li class="inline"><a href="/subsites/gesunde-ernaehrung.html" class="text-white underline lg:inline-block lg:mt-0 hover:text-blue-100">Gesunde Ernährung</a></li>
-            <li class="inline"><a href="/subsites/allgemeines.html" class="text-white lg:inline-block lg:mt-0 hover:text-blue-100">Allgemeines</a></li>
-            <li class="inline"><a href="/subsites/rezepte.html" class="text-white lg:inline-block lg:mt-0 hover:text-blue-100">Rezepte</a></li>
-            <li class="inline"><a href="/subsites/bmr-rechner.html" class="text-white lg:inline-block lg:mt-0 hover:text-blue-100">BMR-Rechner</a></li>
-            <li class="inline"><a href="/subsites/kontakt.html" class="text-white lg:inline-block lg:mt-0 hover:text-blue-100">Kontakt</a></li>
-        </ul>
+    <nav class="fixed top-0 left-0 flex justify-center w-full p-5 bg-green-500">
+        <div class="flex justify-between w-full max-w-6xl">
+            <a href="/" class="text-2xl font-bold text-white">Ernährung & Gesundheit</a>
+            <ul class="flex justify-center ml-10 space-x-6">
+                <li class="inline"><a href="/subsites/gesunde-ernaehrung.html"
+                        class="text-white underline lg:inline-block lg:mt-0 hover:text-blue-100">Gesunde Ernährung</a>
+                </li>
+                <li class="inline"><a href="/subsites/allgemeines.html"
+                        class="text-white lg:inline-block lg:mt-0 hover:text-blue-100">Allgemeines</a></li>
+                <li class="inline"><a href="/subsites/rezepte.html"
+                        class="text-white lg:inline-block lg:mt-0 hover:text-blue-100">Rezepte</a></li>
+                <li class="inline"><a href="/subsites/bmr-rechner.html"
+                        class="text-white lg:inline-block lg:mt-0 hover:text-blue-100">BMR-Rechner</a></li>
+                <li class="inline"><a href="/subsites/kontakt.html"
+                        class="text-white lg:inline-block lg:mt-0 hover:text-blue-100">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container p-4 mx-auto mt-16 text-center">
+        <h1 class="mb-4 text-3xl font-bold">Gesunde Ernährung</h1>
+        <p>
+            Allgemeine Infos zur gesunden Ernährung
+        </p>
     </div>
-</nav>
 
-<div class="container p-4 mx-auto mt-16 text-center">
-    <h1 class="mb-4 text-3xl font-bold">Willkommen auf unserer Ernährungs-Website</h1>
-    <p>
-        Hier finden Sie Informationen und Ressourcen rund um das Thema gesunde Ernährung.
-    </p>
-</div>
-
-
+    <div class="flex justify-center">
+        <div class="flex w-full max-w-6xl bg-gray-300">
+            <nav class="w-full max-w-sm">
+                <div class="text-2xl font-semibold text-white">Interne Navigation</div>
+                <ul class="mt-4 space-y-2">
+                    <li>
+                        <a href="#section1" class="text-white hover:text-blue-100">Abschnitt 1</a>
+                    </li>
+                    <li>
+                        <a href="#section2" class="text-white hover:text-blue-100">Abschnitt 2</a>
+                    </li>
+                    <li>
+                        <a href="#section3" class="text-white hover:text-blue-100">Abschnitt 3</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="grow"></div>
+        </div>
+    </div>
 
 </body>
+
 </html>

@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chat-deployment
+  namespace: teko2 # Replace with your namespace
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chat
+  template:
+    metadata:
+      labels:
+        app: chat
+    spec:
+      containers:
+        - name: chat
+          image: switzerchees/pvs-chat:latest
+          resources:
+            limits:
+              cpu: "0.5"
+              memory: "500Mi"
+          env:
+            - name: MONGODB_CONNECTION
+              value: "mongodb://root:example@localhost:27017/?authMechanism=DEFAULT";
+
+          ports:
+            - containerPort: 3000
