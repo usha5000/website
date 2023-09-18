@@ -6,8 +6,7 @@
     <title>Ernährungs-Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+    
 </head>
 <body class="bg-gray-100">
 
@@ -16,9 +15,9 @@
         <a href="/" class="text-2xl font-bold text-white">Ernährung & Gesundheit</a>
         <ul class="flex justify-center ml-10 space-x-6">
             <li class="inline"><a href="/subsites/gesunde-ernaehrung.html" class="text-white lg:inline-block lg:mt-0 hover:text-blue-100">Gesunde Ernährung</a></li>
-            <li class="inline"><a href="/subsites/allgemeines.html" class="text-white lg:inline-block lg:mt-0 hover:text-blue-100" bg->Allgemeines</a></li>
+            <li class="inline"><a href="/subsites/allgemeines.html" class="text-white lg:inline-block lg:mt-0 hover:text-blue-100">Allgemeines</a></li>
             <li class="inline"><a href="/subsites/rezepte.html" class="text-white lg:inline-block lg:mt-0 hover:text-blue-100">Rezepte</a></li>
-            <li class="inline"><a href="/subsites/bmr-rechner.html" class="text-white lg:inline-block lg:mt-0 hover:text-blue-100">BMR-Rechner</a></li>
+            <li class="inline"><a href="/subsites/bmr-rechner.html" class="text-white underline lg:inline-block lg:mt-0 hover:text-blue-100">BMR-Rechner</a></li>
             <li class="inline"><a href="/subsites/kontakt.html" class="text-white lg:inline-block lg:mt-0 hover:text-blue-100">Kontakt</a></li>
         </ul>
     </div>
@@ -31,30 +30,7 @@
     </p>
 </div>
 
-<div class="mt-20 swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="bilder/ernährungspyramide.png" alt="Bild 1" class="w-1/2 mx-auto h-1/2"></div>
-        <div class="swiper-slide"><img src="bilder/obst_gemuese.jpg" alt="Bild 2" class="w-1/2 mx-auto h-1/2"></div>
-        <div class="swiper-slide"><img src="bilder/healthy_stuff.jpg" alt="Bild 3" class="w-1/2 mx-auto h-1/2"></div>
-        <!-- Fügen Sie weitere Bilder nach Bedarf hinzu -->
-    </div>
-    <!-- Wenn Sie Navigationspfeile hinzufügen möchten: -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-</div>
 
-<script>
-    var swiper = new Swiper('.swiper-container', {
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-    });
-</script>
 
 </body>
 </html>
