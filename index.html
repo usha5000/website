@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ernährungs-Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </head>
 <body class="bg-gray-100">
 
@@ -21,11 +24,37 @@
     </div>
 </nav>
 
-<div class="container p-4 mx-auto mt-16 text-center" style="background-image: url('healthy_stuff.jpg'); background-size: 50% auto; background-repeat: no-repeat; background-attachment: fixed; background-position: center center; height: 100vh;">
+<div class="container p-4 mx-auto mt-16 text-center">
     <h1 class="mb-4 text-3xl font-bold">Willkommen auf unserer Ernährungs-Website</h1>
     <p>
         Hier finden Sie Informationen und Ressourcen rund um das Thema gesunde Ernährung.
     </p>
 </div>
+
+<div class="mt-20 swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="bilder/ernährungspyramide.png" alt="Bild 1" class="w-1/2 mx-auto h-1/2"></div>
+        <div class="swiper-slide"><img src="bilder/obst_gemuese.jpg" alt="Bild 2" class="w-1/2 mx-auto h-1/2"></div>
+        <div class="swiper-slide"><img src="bilder/healthy_stuff.jpg" alt="Bild 3" class="w-1/2 mx-auto h-1/2"></div>
+        <!-- Fügen Sie weitere Bilder nach Bedarf hinzu -->
+    </div>
+    <!-- Wenn Sie Navigationspfeile hinzufügen möchten: -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+    });
+</script>
+
 </body>
 </html>
