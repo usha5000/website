@@ -22,12 +22,46 @@
 </nav>
 
 <div class="container p-4 mx-auto mt-16 text-center">
-    <h1 class="mb-4 text-3xl font-bold">Willkommen auf unserer Ernährungs-Website</h1>
+    <h1 class="mb-4 text-2xl font-bold">BMR Rechner</h1>
     <p>
-        Hier finden Sie Informationen und Ressourcen rund um das Thema gesunde Ernährung.
+        Mithilfe des BMR-Rechners lässt sich der Grundumsatz (Basal Metabolic Rate) berechnen
     </p>
-</div>
+    <p class="mb-4">Füllen Sie die folgenden Felder aus, um Ihren Grundumsatz (BMR) zu berechnen.</p>
+    <form id="bmr-form" class="mb-8">
+        <div class="mb-4">
+            <label for="gender" class="block font-semibold">Geschlecht:</label>
+            <select id="gender" name="gender" class="w-full px-3 py-2 border rounded">
+                <option value="male">Männlich</option>
+                <option value="female">Weiblich</option>
+            </select>
+        </div>
+        <div class="mb-4">
+            <label for="age" class="block font-semibold">Alter (Jahre):</label>
+            <input type="number" id="age" name="age" class="w-full px-3 py-2 border rounded">
+        </div>
+        <div class="mb-4">
+            <label for="weight" class="block font-semibold">Gewicht (kg):</label>
+            <input type="number" id="weight" name="weight" class="w-full px-3 py-2 border rounded">
+        </div>
+        <div class="mb-4">
+            <label for="height" class="block font-semibold">Größe (cm):</label>
+            <input type="number" id="height" name="height" class="w-full px-3 py-2 border rounded">
+        </div>
+        <button type="button" id="calculate" class="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600">
+            BMR berechnen
+        </button>
+    </form>
+    <div id="result" class="text-xl font-semibold"></div>
 
+    <div id="results-container" class="hidden">
+        <h2 class="mt-4 text-lg font-semibold">Ergebnisse nach verschiedenen Formeln:</h2>
+        <div id="harris-benedict-result" class="mb-2"></div>
+        <div id="mifflin-st-jeor-result" class="mb-2"></div>
+        <!-- Füge hier weitere Ergebnis-Divs für zusätzliche Formeln hinzu -->
+    </div>
+
+</div>
+<script src="/js/bmr-rechner.js"></script>
 
 
 </body>
