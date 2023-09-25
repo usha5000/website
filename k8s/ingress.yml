@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: website-deployment
-  namespace: {{ namespace }}
+  namespace: teko2
   annotations:
     nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
     acme.cert-manager.io/http01-edit-in-place: "true"
@@ -12,10 +12,10 @@ spec:
   ingressClassName: nginx
   tls:
     - hosts:
-        - *syed.teko.hackerman.ch 
-      secretName: *syed.teko.hackerman.ch-tls
+        - syed.teko.hackerman.ch 
+      secretName: syed.teko.hackerman.ch-tls
   rules:
-    - host: *syed.teko.hackerman.ch
+    - host: syed.teko.hackerman.ch
       http:
         paths:
           - path: /
